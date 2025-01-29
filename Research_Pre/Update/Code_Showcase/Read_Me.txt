@@ -1,0 +1,3 @@
+This is a group of deep learning model used by my self in may previous research: "Multi-Model Integration for Marine Meteorological Forecasts".
+
+As you can see, four deep learning model, Informer, DeepVAR, N-BEATS, TFT, built and tested by myself, are trained using the same data, and then integrated by additional trained weights. Then it go through a GCN (Graph Wave Network) to further append spatio-temporal dependencies between locations, which lead to a great success compared with previous study.

@@ -1,0 +1,7 @@
+Previous studies on void detection in COSB have been very challenging, as Voids and Backgrounds exhibit a high degree of similarity, and earlier research has primarily focused on using single models to learn data distributions directly. However, the complexity of the data may surpasses the learning capacity of these models.
+
+In my view, accurately capturing Voids inevitably requires some form of 3D modeling. I propose changing the single image input to a combined input of multiple consecutive images. This would enable the use of a multi-channel convolutional kernel (compared to the 2D kernels used in previous experiments), taking into account the multidimensional characteristics of Voids and Backgrounds. For example, Voids are likely to appear across multiple images, whereas Backgrounds may only appear in a single image. This could significantly improve data learning capability and speed up model convergence.
+
+If this experiment succeeds, future work could further explore this direction by expanding the data dimension from 2D to fully 3D, extracting features from multiple consecutive images to achieve complete 3D modeling.
+
+However, this approach requires that CT images are sampled continuously, with a controllable sampling interval. Considering the large scale of data, I am quite optimistic about the future.
